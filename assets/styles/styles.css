@@ -1,0 +1,58 @@
+#stage{
+    height: 500px;
+    width: 500px;
+}
+
+.cell{
+    background-color: white;
+    text-align: center;
+    border: solid 1px grey;
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.cell.snake{
+    background: url("./../images/snake.png") no-repeat;
+    background-size: contain;
+}
+.cell.snake b{
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    padding: 2px;
+    display: inline-block;
+}
+
+.cell.ladder{
+    background: url("./../images/ladder.png") no-repeat;
+    background-size: contain;
+}
+.cell.ladder b{
+    color: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    padding: 2px;
+    display: inline-block;
+}
+#stage{
+    margin: 50px auto;
+}
+
+.cell.user-1{
+    background-color: #f3ef00;
+}
+.cell.user-2{
+    background-color: #fa13cc;
+}
+.cell.user-3{
+    background-color: #872e36;
+}
+.cell.user-4{
+    background-color: #0034ff;
+}

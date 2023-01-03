@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript - Snake and Ladders</title>
+    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="#">Snake and Ladders</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <button id="dice" class="btn btn-info btn-sm mt-2">Roll a Dice</button>
+            </li>
+            <li class="nav-item disabled">
+                <a class="nav-link disabled" href="#">Dice: <span id="dice_number" class="text-success">0</span></a>
+            </li>
+            <li class="nav-item disabled">
+                <a class="nav-link disabled" href="#">Current User: <span id="current_user" class="text-success">1</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="stage">
+                <!--Generate by Javascript-->
+
+                <span class="cell">
+                    1
+                </span>
+
+                <span class="cell snake">
+                    1
+                    <b>20</b>
+                </span>
+
+                <span class="cell ladder">
+                    1
+                    <b>15</b>
+                </span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./assets/scripts/jquery-1.11.3.min.js"></script>
+<script src="./assets/scripts/scr.js"></script>
+</body>
+</html>
